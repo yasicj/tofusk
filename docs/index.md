@@ -13,10 +13,7 @@
 ### 1. 近期现行标准电子成绩单样式（现行版）
 新版成绩单（包括 Home Edition 家考版与线下考点版）采用了高度扁平化的视觉结构。它在布局上优化了个人肖像的呈现比例，并在下方深度集成了由算法自动生成的单科得分条形统计图。
 
-<img width="619" height="800" alt="新版托福成绩单样本图片" src="https://github.com/user-attachments/assets/d055915e-a3dc-4c6d-9a6f-06e2cf03bff6" />
-
-
-
+<img width="619" height="800" alt="新版托福成绩单样本图片" src="https://github.com/user-attachments/assets/0291aec1-5020-4788-93a4-b61f3e64b49d" />
 
 
 *图1：遵循扁平化视觉规范的现行托福个人成绩报告单官方样例*
@@ -24,8 +21,7 @@
 ### 2. 经典标准纸质/电子报告单样式（经典老版）
 相比之下，老版本的托福成绩报告单则更侧重于文字版面的纵向平铺。其在左上角保留了带有深色阴影的经典正方形“TOEFL”企业徽标，且个人地址、出生日期等隐私字段均以完全显式（无掩码）的形式进行排列。
 
-<img width="618" height="800" alt="老版托福成绩样本图片" src="https://github.com/user-attachments/assets/021ffad8-4b55-4b24-aa6c-97ac545de7f1" />
-
+<img width="618" height="800" alt="老版托福成绩样本图片" src="https://github.com/user-attachments/assets/7af95213-cbfc-4647-b2e1-1cc64be9cb15" />
 
 *图2：包含传统纵向单列排版的经典托福成绩报告单官方样例*
 
