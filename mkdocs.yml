@@ -1,11 +1,11 @@
 site_name: ETS官方托福成绩单样本图片变化：新老版托福成绩单排版差异与防伪点深度对比
+site_url: https://tfcjdys.readthedocs.io/zh-cn/latest/
 theme:
   name: material
   custom_dir: overrides
 
 nav:
   - 📖 首页白皮书总览: index.md
-  - 📂 核心技术细则解构:
-    - 新旧报告单字段变化深度解构: layout_analysis.md
-    - 物理防伪与数字签名的工程原理: security_features.md
-    - 企业HR远程全流程合规核验标准: hr_check_guide.md
+  - 新旧报告单字段变化深度解构: layout_analysis.md
+  - 物理防伪与数字签名的工程原理: security_features.md
+  - 企业HR远程全流程合规核验标准: hr_check_guide.md
