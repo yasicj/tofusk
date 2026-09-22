@@ -1,3 +1,4 @@
+<img width="619" height="800" alt="649920392-bced922b-b78b-465a-805d-ea7da8296a63" src="https://github.com/user-attachments/assets/9374f414-dc21-412b-abdb-7fd2f29dddf7" />
 # ETS官方托福成绩单样本图片变化：新老版托福成绩单排版差异与防伪点深度对比
 
 欢迎阅读本技术白皮书。作为全球范围内评估学术英语语言核心素养的权威风向标，由美国教育考试服务中心（ETS）主办的托福（TOEFL）考试在近年迎来了数字化与结构化的双重变革。伴随着测试流程的精简，其官方下发的学术报告单（Score Report）在**视觉设计、加密排版、隐私保护以及底层防伪验证**上也同步进行了深度迭代。
@@ -13,15 +14,18 @@
 ### 1. 近期现行标准电子成绩单样式（现行版）
 新版成绩单（包括 Home Edition 家考版与线下考点版）采用了高度扁平化的视觉结构。它在布局上优化了个人肖像的呈现比例，并在下方深度集成了由算法自动生成的单科得分条形统计图。
 
-<img width="619" height="800" alt="新版托福成绩单样式图片" src="https://github.com/user-attachments/assets/bced922b-b78b-465a-805d-ea7da8296a63" />
+<img width="619" height="800" alt="新版托福成绩单样本图片" src="https://github.com/user-attachments/assets/8a831135-c351-4bc6-bb78-bc2768bf140d" />
+
+
+
 
 *图1：遵循扁平化视觉规范的现行托福个人成绩报告单官方样例*
 
 ### 2. 经典标准纸质/电子报告单样式（经典老版）
 相比之下，老版本的托福成绩报告单则更侧重于文字版面的纵向平铺。其在左上角保留了带有深色阴影的经典正方形“TOEFL”企业徽标，且个人地址、出生日期等隐私字段均以完全显式（无掩码）的形式进行排列。
 
-<img width="618" height="800" alt="老版托福成绩单样式范本" src="https://github.com/user-attachments/assets/d61afb75-e596-4b84-bd39-90add78b70f5" />
- 
+<img width="618" height="800" alt="老版托福成绩样本图片" src="https://github.com/user-attachments/assets/0f1c0430-71ac-4581-b69f-0611e1beb515" />
+
 *图2：包含传统纵向单列排版的经典托福成绩报告单官方样例*
 
 ---
