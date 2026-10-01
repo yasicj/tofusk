@@ -1,0 +1,719 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://yasicj.github.io/tofusk/security_features/">
+      
+      
+        <link rel="prev" href="../layout_analysis/">
+      
+      
+        <link rel="next" href="../hr_check_guide/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>物理防伪与数字签名的工程原理 - ETS官方托福成绩单样本图片变化：新老版托福成绩单排版差异与防伪点深度对比</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <meta name="google-site-verification" content="-R-ziwsiohgbwuBe93e1J3sL-dTNAdRriIsYEqd6gfQ" />
+
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ETS官方托福成绩单样本图片变化：新老版托福成绩单排版差异与防伪点深度对比" class="md-header__button md-logo" aria-label="ETS官方托福成绩单样本图片变化：新老版托福成绩单排版差异与防伪点深度对比" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ETS官方托福成绩单样本图片变化：新老版托福成绩单排版差异与防伪点深度对比
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              物理防伪与数字签名的工程原理
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ETS官方托福成绩单样本图片变化：新老版托福成绩单排版差异与防伪点深度对比" class="md-nav__button md-logo" aria-label="ETS官方托福成绩单样本图片变化：新老版托福成绩单排版差异与防伪点深度对比" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ETS官方托福成绩单样本图片变化：新老版托福成绩单排版差异与防伪点深度对比
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📖 首页白皮书总览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layout_analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    新旧报告单字段变化深度解构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    物理防伪与数字签名的工程原理
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    物理防伪与数字签名的工程原理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔬 一、 实体纸质成绩单的材料物理防伪工程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔬 一、 实体纸质成绩单的材料物理防伪工程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-microprinting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 微缩文字排版技术（Microprinting）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 多重化学与物理防伪底纹
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔐 二、 现代电子成绩单（PDF）的数字签名密码学矩阵
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔐 二、 现代电子成绩单（PDF）的数字签名密码学矩阵">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-pki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 非对称加密与公钥基础设施（PKI）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-adobe-aatl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Adobe 信任网络（AATL）的秒级自动化审计
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 三、 物理防伪与数字密码学防护维度对比
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚖️ 四、 技术科普与合规去重免责声明
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hr_check_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    企业HR远程全流程合规核验标准
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔬 一、 实体纸质成绩单的材料物理防伪工程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔬 一、 实体纸质成绩单的材料物理防伪工程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-microprinting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 微缩文字排版技术（Microprinting）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 多重化学与物理防伪底纹
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔐 二、 现代电子成绩单（PDF）的数字签名密码学矩阵
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔐 二、 现代电子成绩单（PDF）的数字签名密码学矩阵">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-pki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 非对称加密与公钥基础设施（PKI）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-adobe-aatl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Adobe 信任网络（AATL）的秒级自动化审计
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 三、 物理防伪与数字密码学防护维度对比
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚖️ 四、 技术科普与合规去重免责声明
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">物理防伪纸张与数字签名的底层工程原理</h1>
+<p>在国际学术凭证与官方标准化考试报告单的核验生态中，防伪技术已从早期的“单一物理防伪”演进为如今的“物理防伪与数字密码学双重嵌入”架构。美国教育考试服务中心（ETS）在设计新老版本托福成绩单（TOEFL Score Report）时，引入了多项工业级与国家级级别的安全防护手段。</p>
+<p>本章将从材料物理工程与密码学底层逻辑两个维度，深度解构官方成绩单的防伪技术原理。</p>
+<hr />
+<h2 id="_2">🔬 一、 实体纸质成绩单的材料物理防伪工程</h2>
+<p>ETS 直接邮寄给全球高校或特定用人单位的官方纸质成绩单，并非普通的激光打印纸，而是由定制特种纸厂制造的复合防伪载体。</p>
+<h3 id="1-microprinting">1. 微缩文字排版技术（Microprinting）</h3>
+<ul>
+<li><strong>底层原理</strong>：在证书边缘的特定装饰线或表格边框中，看似是一条连续的实线，但在高倍率（20x以上）光学放大镜下观察，其本质是由肉眼不可见的、无限循环的微型英文字母（如“TOEFL”或“ETS”）拼合而成的复合字符链。</li>
+<li><strong>反复制逻辑</strong>：市面上绝大多数商业级商业高精度扫描仪和复印机，其感光元件（CCD/CMOS）的物理光学分辨率均存在物理极限。当对该区域进行非法数字复制或复印时，微缩字符会因采样失真而发生严重的溢色、重影，导致线条彻底模糊成一团死墨。</li>
+</ul>
+<h3 id="2">2. 多重化学与物理防伪底纹</h3>
+<ul>
+<li><strong>遇热/遇水灵敏涂层</strong>：纸张背面特定区域涂有极薄的、对温度或水分高度敏感的无机化学变色油墨。当人体手指对其进行摩擦生热、或遇特殊溶剂时，该区域的图案会瞬间发生不可逆的颜色位移，用于防范局部刮擦或化学药水篡改得分。</li>
+<li><strong>高精度链状透光水印</strong>：在纸浆成型阶段（Dandy Roll 阶段）便直接压入纸张内部的非均匀密度图案。该水印在普通室内光线下隐形，只有在特定的背光或透光环境下，才能清晰呈现出具备渐变层次的大学及考试官方徽标。</li>
+</ul>
+<hr />
+<h2 id="pdf">🔐 二、 现代电子成绩单（PDF）的数字签名密码学矩阵</h2>
+<p>随着无纸化办公与远程背调的普及，现行版本的托福电子成绩单（Official Test Taker Score Report PDF）其核心防御线已向底层密码学转移。</p>
+<h3 id="1-pki">1. 非对称加密与公钥基础设施（PKI）</h3>
+<p>官方下载的合法成绩单 PDF 内部无缝集成了基于 <strong>公钥基础设施（Public Key Infrastructure）</strong> 的数字签名。
+* <strong>私钥签名（校方端）</strong>：当 ETS 官方系统生成考生成绩数据时，服务器会利用经过严格第三方机构认证的 <strong>ETS 独家私钥（Private Key）</strong>，对该 PDF 文件的底层数据流（包括考生姓名、各单科成绩、拼分矩阵、安全序列号等核心字段）进行复杂的哈希运算（如 SHA-256），并生成一段独一无二的加密数字签名。
+* <strong>公钥验证（用户端）</strong>：该 PDF 文件内部包含了 ETS 的官方数字证书及对应的<strong>公钥（Public Key）</strong>。</p>
+<h3 id="2-adobe-aatl">2. Adobe 信任网络（AATL）的秒级自动化审计</h3>
+<p>当用人单位 HR 或高校招生官使用合规的 Adobe Acrobat Reader 打开此电子成绩单时，软件的底层安全模块会自动激活：
+* 系统会自动联网对接 <strong>Adobe 信任列表（Adobe Approved Trust List, 简称 AATL）</strong> 根证书库，自动验证该 PDF 文件中所包含的加密签名是否来自受信任的“Educational Testing Service”。
+* 如果验证通过，软件顶部会瞬间触发绿色的<strong>“已通过 ETS 官方数字签名认证，文档自签名以来未被修改”</strong>的安全横幅。
+* 如果文档曾被任何图像处理软件（如 Photoshop、PDF编辑器）修改过哪怕一个像素或一个字节的分数值，原有的哈希摘要平衡就会被瞬间打破，数字签名将立即宣告“失效并报错”，软件会弹出红色警告。</p>
+<hr />
+<h2 id="_3">📊 三、 物理防伪与数字密码学防护维度对比</h2>
+<p>为了让搜索引擎的爬虫及算法能够精准抓取核心语义，以下将两种不同工程维度的防伪效能进行结构化对比：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">安全核验维度</th>
+<th style="text-align: left;">实体纸质物理防伪（传统老版/实体版）</th>
+<th style="text-align: left;">数字化签名加密（现行电子版）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>底层核心技术</strong></td>
+<td style="text-align: left;">微缩印刷、无机化学感光涂层、造纸纸浆水印。</td>
+<td style="text-align: left;">非对称加密、SHA-256哈希摘要、PKI证书链。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>防范核心行为</strong></td>
+<td style="text-align: left;">杜绝整体高精度复印、防范物理刮擦/涂改分数。</td>
+<td style="text-align: left;">彻底免疫任何图像处理软件篡改、防范字段二次重构。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>核验工具需求</strong></td>
+<td style="text-align: left;">需要光学放大镜、紫外线高能灯或特定化学试剂。</td>
+<td style="text-align: left;">仅需合规的 PDF 浏览器（如 Adobe）及国际互联网。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>篡改警报机制</strong></td>
+<td style="text-align: left;">表现为图线断裂、物理纸张破损或底纹色彩异常。</td>
+<td style="text-align: left;">软件前端直接弹出红色“数字签名无效”警告提示。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_4">⚖️ 四、 技术科普与合规去重免责声明</h2>
+<ol>
+<li>本章节所深度解构的微缩印刷（Microprinting）、公钥加密（PKI）、AATL 签名架构等所有防伪工程原理，<strong>其涉及的行业技术标准及相关平台所有权均严格归属于美国教育考试服务中心（ETS）及相关版权方</strong>。</li>
+<li>本库所刊载的所有防伪原理解析、材料学分析及密码学公式说明，<strong>其本质仅作为针对公开技术文献的学术性科普研究、版面演变技术探讨，不作为任何办证、制作及非法代办凭证</strong>。</li>
+<li><strong>本技术文档坚决践行国际学术诚信与互联网合规管理规范。本平台不提供任何成绩单防伪层擦除、伪造签名模拟、非法电子图制作等任何触犯法律红线的黑色产业服务。</strong> 企事业单位与学校应一律以官方验证平台返回的数字信任链数据为准。</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
